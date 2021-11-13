@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>YARD Sale</title>
+    <link rel="stylesheet" media="(max-width: 800px)" href="./styles.css" />
+    <title>YARD Sale - Recovery Password</title>
 </head>
 <body>
-    <header class="header-recovery">
-        <img src= "/assets/logos/logo_yard_sale.svg" alt = "Logo de Yardsale">
-    </header>
     <main>
-        <section class="recovery-container">
-            <div class= "recovery-password">
+        <div class="recovery">
+          <img src="./assets/icons/icon_close.png" alt ="close" class= "close">
+            <div class="form-container-recovery">
+              <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+        
+              <form action="/" class="form-recovery">
+
                 <h3>Password recovery</h3>
-                <p>Inform the email addres uses to create your account</p>
-                <h4>Email address</h4>  
-                <input type = "text" placeholder = "enter your e-mail">
+                <p>Inform the email addres used to create your account</p>
+
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="emailaddress" placeholder="enter your e-mail" class="input input-email">
+                <input type="submit" value="Submit" class="submit-button">
+                <a class= "link-back-to-login" href = "/">Back to log in</a>
+
+              </form>
+
             </div>
-            <div class="submit">
-                <a href = "/">Submit</a>
-            </div>
-            <div class="back-to">
-                <a href = "/">Back to log in</a>
-            </div>
-        </section>
+          </div>
         
 
     </main>

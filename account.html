@@ -9,26 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" media="(max-width: 800px)" href="./styles.css" />
-    <title>YARD Sale - Login</title>
+    <title>YARD Sale - My Account</title>
 </head>
 <body>
-    <main>
-        <div class="login">
-          <img src="./assets/icons/icon_close.png" alt ="close" class= "close">
-            <div class="form-container-login">
-              <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+    <section class="icons-app-bars">
+       
+        <img src="./assets/icons/icon_shopping_cart_notification.svg" alt="shopping" class="grid-shopping">
+        <img src="./assets/icons/icon_menu.svg" alt ="menu" class ="grid-menu">
+        <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="grid-logo">
         
-              <form action="/" class="form-login">
+    </section>
+
+    <main>
+        <div class="account">
+            <div class="form-container-account">
+              <h3>My account</h3>
+        
+              <form action="/" class="form-account">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" placeholder="enter your name" class="input input-name">
+
                 <label for="email" class="label">Email address</label>
                 <input type="text" id="emailaddress" placeholder="enter your e-mail" class="input input-email">
 
                 <label for = "password" class="label">Password</label>
                 <input type="password" id="password" placeholder="*********" class="input input-password">
         
-                <input type="submit" value="Login" class="login-button">
-                <a class= "link-recover-password" href = "/">Forgot my password</a>
-                <input type="submit" value="Sign up" class="signup-button">
-              </form>
+                <input type="submit" value="Create account" class="create-account-button">
+
+            </form>
             </div>
           </div>
 
